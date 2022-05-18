@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let Amar = {
+        name : "Amar",
+        skill : "singing",
+        live  : "Goa",
+
+        talent: function(order){
+            console.log(`Give Your Skill of ${order} to ${this.name} `)
+        },
+    };
+
+    let Akbar = {
+        name : "Akbar",
+        skill : "Chef",
+        live : "Mumbai",
+    }
+
+    let Anthony = {
+    name : "Anthony",
+    skill : "Magician",
+    live : "Kashmir",
+}
+
+Amar.talent.call(Akbar, "singing")
+Amar.talent.call(Anthony, "chef")
+Amar.talent.call(Amar, "Magician")
+
+
+</script>
